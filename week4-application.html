@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Week 4 — Application &amp; Integration — Four Cowrie Shell</title>
+  <meta name="color-scheme" content="dark" />
+  <style>
+    :root{
+      --bg:#020617;
+      --ink:#f3f4f6;
+      --muted:#bfc3d1;
+      --card:#020617;
+      --accent:#bb66ff;
+      --accent-2:#ffd166;
+      --border:rgba(148,163,184,.55);
+      --radius:18px;
+      --max:900px;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:radial-gradient(circle at top,#020617 0,#000 55%);
+      color:var(--ink);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+    a{color:inherit;text-decoration:none;}
+    a:hover{color:var(--accent-2);}
+    header{
+      border-bottom:1px solid rgba(148,163,184,.35);
+      background:rgba(15,23,42,.9);
+      backdrop-filter:blur(14px);
+      position:sticky;top:0;z-index:20;
+    }
+    .nav-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:8px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .brand{display:flex;align-items:center;gap:8px;}
+    .brand img{width:32px;height:32px;border-radius:999px;}
+    .brand-text span{display:block;font-size:10px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;}
+    .brand-text strong{font-size:13px;}
+    .nav-links{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--muted);}
+    .nav-links a{padding:5px 9px;border-radius:999px;border:1px solid transparent;}
+    .nav-links a.current{border-color:var(--border);background:rgba(15,23,42,.9);}
+    main{flex:1;}
+    .wrap{max-width:var(--max);margin:18px auto 26px;padding:0 16px;}
+    h1{font-size:22px;margin:0 0 4px;}
+    .eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);margin-bottom:4px;}
+    .meta{font-size:12px;color:var(--muted);margin-bottom:16px;}
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      border:1px solid var(--border);
+      padding:14px 14px 16px;
+      margin-bottom:14px;
+    }
+    .card h2{font-size:16px;margin:0 0 8px;}
+    .card p{font-size:13px;margin:0 0 8px;color:var(--muted);line-height:1.6;}
+    .day-label{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);}
+    .mini-heading{font-size:12px;font-weight:600;margin-top:4px;}
+    ul{margin:6px 0 6px 18px;padding:0;font-size:13px;color:var(--muted);}
+    li{margin-bottom:4px;}
+    .tag-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;font-size:11px;}
+    .tag{padding:3px 8px;border-radius:999px;border:1px solid rgba(148,163,184,.6);color:var(--muted);}
+    footer.site{
+      border-top:1px solid rgba(148,163,184,.35);
+      margin-top:6px;
+    }
+    .footer-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:10px 16px 16px;
+      font-size:11px;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="SwamiG.gif" alt="SwamiG Institute logo" />
+      <div class="brand-text">
+        <span>Week 4</span>
+        <strong>Four Cowrie Shell</strong>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Overview</a>
+      <a href="week1-foundations.html">Week 1</a>
+      <a href="week2-responses.html">Week 2</a>
+      <a href="week3-art.html">Week 3</a>
+      <a class="current" href="week4-application.html">Week 4</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="eyebrow">Days 22–30</div>
+    <h1>Application &amp; Integration</h1>
+    <div class="meta">
+      Focus: real-world application, divination ethics, shadow work, and evaluating readiness
+      for deeper Four Cowrie or other Orisha-based training.
+    </div>
+
+    <!-- Day 22 -->
+    <article class="card" id="day22">
+      <div class="day-label">Day 22</div>
+      <h2>Divining for Yourself</h2>
+      <p>
+        Today you ask Four Cowrie directly what you need to focus on in this present week.
+        Allow the answer to guide your schedule, not just your thoughts.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Ask: “Is this the primary focus I need for the coming week?” and cast.</li>
+        <li>Translate the answer into one concrete action or boundary.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>How honest was I in stating the question, and where did I hold back?</p>
+      <div class="tag-row">
+        <span class="tag">Self reading</span>
+        <span class="tag">Focus</span>
+      </div>
+    </article>
+
+    <!-- Day 23 -->
+    <article class="card" id="day23">
+      <div class="day-label">Day 23</div>
+      <h2>Divining for Others — Ethics</h2>
+      <p>
+        Before reading for others, clarify your standards. Four Cowrie is powerful in the hands
+        of a person committed to truth, consent, and protection of the seeker’s dignity.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Write seven personal rules for ethical divination (e.g., confidentiality, consent, no promises).</li>
+        <li>If appropriate, perform one simple reading for a willing person using only one question.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>Where might ego, fear, or the desire to impress interfere with my clarity?</p>
+      <div class="tag-row">
+        <span class="tag">Ethics</span>
+        <span class="tag">Service</span>
+      </div>
+    </article>
+
+    <!-- Day 24 -->
+    <article class="card" id="day24">
+      <div class="day-label">Day 24</div>
+      <h2>Troubleshooting “Bad” Casts</h2>
+      <p>
+        Sometimes answers feel contradictory or disappointing. Instead of discarding them,
+        treat them as feedback on question design, timing, or your emotional readiness.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Choose three castings that felt wrong, confusing, or disappointing.</li>
+        <li>For each, ask: “What might this answer have been trying to protect or reveal?”</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>What story emerges when I place these three “bad” castings side by side?</p>
+      <div class="tag-row">
+        <span class="tag">Troubleshooting</span>
+        <span class="tag">Meta-view</span>
+      </div>
+    </article>
+
+    <!-- Day 25 -->
+    <article class="card" id="day25">
+      <div class="day-label">Day 25</div>
+      <h2>Power of Word — Okanran Revisited</h2>
+      <p>
+        Okanran is associated with the power of speech and the risk of negative inner dialogue.
+        Today you listen for how your words shape the questions you bring to the shells.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Ask: “Is my self-talk supporting my destiny in this season?” and cast.</li>
+        <li>Write three replacement phrases for any harmful self-talk you notice.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>Which phrase of self-talk most needs to be retired right now?</p>
+      <div class="tag-row">
+        <span class="tag">Okanran</span>
+        <span class="tag">Speech</span>
+      </div>
+    </article>
+
+    <!-- Day 26 -->
+    <article class="card" id="day26">
+      <div class="day-label">Day 26</div>
+      <h2>Ejife — Three-Position Spread</h2>
+      <p>
+        Today you use multiple casts together. While Four Cowrie often works with single
+        questions, a short spread can reveal movement through time.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Cast three times with these questions: “What is leaving?”, “What is arriving?”, “What is hidden?”</li>
+        <li>Summarize the three results as one short story.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>What transition is the story pointing toward?</p>
+      <div class="tag-row">
+        <span class="tag">3-cast spread</span>
+        <span class="tag">Story</span>
+      </div>
+    </article>
+
+    <!-- Day 27 -->
+    <article class="card" id="day27">
+      <div class="day-label">Day 27</div>
+      <h2>Alafia Day — Blessing Work</h2>
+      <p>
+        Center your attention on the energies of ease, consent, and blessing. Allow yourself
+        to recognize where things are already flowing well.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Ask a blessing-oriented question, such as “Is this project blessed for me to continue?”</li>
+        <li>Create a gratitude ritual or offering based on the answer.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>What blessing have I been refusing to see because I was focused on struggle?</p>
+      <div class="tag-row">
+        <span class="tag">Alafia</span>
+        <span class="tag">Gratitude</span>
+      </div>
+    </article>
+
+    <!-- Day 28 -->
+    <article class="card" id="day28">
+      <div class="day-label">Day 28</div>
+      <h2>Oyeku Day — Shadow &amp; Protection</h2>
+      <p>
+        Today you consciously engage topics that evoke fear or resistance, approaching them
+        with the understanding that a firm “No” can be a shield as much as a barrier.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Ask one question you have been afraid to bring to the shells.</li>
+        <li>If Oyeku appears, pause and ask what is being protected.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>Which area of life do I most avoid exploring with honest divination?</p>
+      <div class="tag-row">
+        <span class="tag">Shadow</span>
+        <span class="tag">Protection</span>
+      </div>
+    </article>
+
+    <!-- Day 29 -->
+    <article class="card" id="day29">
+      <div class="day-label">Day 29</div>
+      <h2>Thirty-Cast Cycle</h2>
+      <p>
+        This intensive cycle helps you see which response family has been governing your recent
+        path. It also mirrors how often you are willing to ask for guidance.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Complete 30 castings over the day or in focused blocks.</li>
+        <li>Calculate the percentage of each response family (Alafia, Etawa, Ejife, Okanran, Oyeku).</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>Which family appears as your current “governing shell,” and how does that feel?</p>
+      <div class="tag-row">
+        <span class="tag">Data</span>
+        <span class="tag">Governing family</span>
+      </div>
+    </article>
+
+    <!-- Day 30 -->
+    <article class="card" id="day30">
+      <div class="day-label">Day 30</div>
+      <h2>Readiness Evaluation &amp; Next Path</h2>
+      <p>
+        The final day is a conversation between you, your higher self, and your Four Cowrie
+        archive. You are not grading yourself but listening for whether you are ready for
+        deeper work or need more time at this level.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Prepare a simple packet for review: your 21-day casting log, the 30-cast summary from Day 29, and your top five insights.</li>
+        <li>Write one paragraph on what kind of Four Cowrie or Orisha-based training you feel called to next.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>Do I feel invited to more structured study, or to sit quietly with what I have received so far?</p>
+      <div class="tag-row">
+        <span class="tag">Readiness</span>
+        <span class="tag">Integration</span>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span>Week 4 — Application &amp; Integration</span>
+    <span><a href="index.html">Back to Overview</a></span>
+  </div>
+</footer>
+</body>
+</html>
