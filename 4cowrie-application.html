@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="color-scheme" content="dark" />
+<title>Four Cowrie Shell — Contact / Application Form — SwamiG Institute</title>
+
+<style>
+:root{
+  --bg:#0b0b0f;
+  --ink:#f3f4f6;
+  --muted:#bfc3d1;
+  --card:#14141c;
+  --soft:#1b1b25;
+  --accent:#bb66ff;
+  --accent-2:#ffd166;
+  --ring:rgba(187,102,255,.35);
+  --border:rgba(255,255,255,.1);
+  --radius:20px;
+  --max:780px;
+}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  background:#0b0b0f;
+  color:var(--ink);
+}
+
+header{
+  padding:14px 20px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+header img{
+  width:48px;height:48px;
+  border-radius:50%;
+}
+
+header h1{
+  font-size:18px;
+  margin:0;
+}
+
+.container{
+  max-width:var(--max);
+  margin:20px auto 60px;
+  padding:20px;
+  background:var(--card);
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  box-shadow:0 10px 40px rgba(0,0,0,.4);
+}
+
+h2{
+  margin-top:0;
+  font-size:20px;
+}
+
+p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* FORM */
+form label{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:16px;
+  font-size:14px;
+}
+
+input,textarea,select{
+  padding:12px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:var(--soft);
+  color:var(--ink);
+  font-size:14px;
+}
+
+textarea{
+  min-height:120px;
+}
+
+button{
+  padding:12px 20px;
+  border-radius:999px;
+  border:1px solid var(--ring);
+  background:linear-gradient(to right,#4c1d95,#7c3aed);
+  color:white;
+  font-size:15px;
+  cursor:pointer;
+  margin-top:10px;
+  width:100%;
+  box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+button:hover{
+  opacity:.9;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  color:var(--muted);
+  font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="SwamiG.gif" alt="SwamiG Institute"/>
+  <h1>Four Cowrie Shell — Contact / Application</h1>
+</header>
+
+<div class="container">
+
+  <h2>Begin Your Four Cowrie Shell Pathway</h2>
+  <p>
+    Complete this form to connect with the SwamiG Institute regarding the 30-Day Mini Course,
+    additional training, or questions about divination, mentorship, or next steps.
+  </p>
+
+  <!-- ⭐⭐⭐ REPLACE WITH YOUR FORMSPREE ENDPOINT ⭐⭐⭐ -->
+  <form action="https://formspree.io/f/xxxxxxxx" method="POST">
+
+    <label>
+      Full Name
+      <input type="text" name="name" required placeholder="Your full legal name"/>
+    </label>
+
+    <label>
+      Email <span style="color:#ef4444">*</span>
+      <input type="email" name="email" required placeholder="you@example.com"/>
+    </label>
+
+    <label>
+      Phone (optional)
+      <input type="tel" name="phone" placeholder="###-###-####"/>
+    </label>
+
+    <label>
+      What are you interested in?
+      <select name="interest" required>
+        <option value="">Select one...</option>
+        <option value="30-day-mini-course">30 Day Four Cowrie Course</option>
+        <option value="mentorship">Mentorship / Guidance</option>
+        <option value="full-divination-training">Full Divination Training</option>
+        <option value="iyawo-track">Iyawo Track</option>
+        <option value="other">Other (describe below)</option>
+      </select>
+    </label>
+
+    <label>
+      Message / Question
+      <textarea name="message" placeholder="How can we support you?"></textarea>
+    </label>
+
+    <!-- Redirect to thank-you page -->
+    <input type="hidden" name="_redirect" value="4cowrie-thankyou.html"/>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</div>
+
+<footer>
+  &copy; SwamiG Institute — Four Cowrie Shell Divination
+</footer>
+
+</body>
+</html>
