@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Week 1 — Foundations of Four Cowrie Shell — SwamiG Institute</title>
+  <meta name="color-scheme" content="dark" />
+  <style>
+    :root{
+      --bg:#020617;
+      --ink:#f3f4f6;
+      --muted:#bfc3d1;
+      --card:#0b1120;
+      --soft:#020617;
+      --accent:#bb66ff;
+      --accent-2:#ffd166;
+      --border:rgba(148,163,184,.5);
+      --radius:18px;
+      --max:900px;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:radial-gradient(circle at top,#111827 0,#020617 55%);
+      color:var(--ink);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+    a{color:inherit;text-decoration:none;}
+    a:hover{color:var(--accent-2);}
+    header{
+      border-bottom:1px solid rgba(148,163,184,.35);
+      background:rgba(15,23,42,.92);
+      backdrop-filter:blur(16px);
+      position:sticky;top:0;z-index:20;
+    }
+    .nav-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:8px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:8px;
+    }
+    .brand img{
+      width:32px;height:32px;border-radius:999px;
+    }
+    .brand-text span{display:block;font-size:10px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;}
+    .brand-text strong{font-size:13px;}
+    .nav-links{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--muted);}
+    .nav-links a{padding:5px 9px;border-radius:999px;border:1px solid transparent;}
+    .nav-links a.current{border-color:var(--border);background:rgba(15,23,42,.9);}
+    main{flex:1;}
+    .wrap{max-width:var(--max);margin:18px auto 26px;padding:0 16px;}
+    h1{font-size:22px;margin:0 0 4px;}
+    .eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);margin-bottom:4px;}
+    .meta{font-size:12px;color:var(--muted);margin-bottom:16px;}
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      border:1px solid var(--border);
+      padding:14px 14px 16px;
+      margin-bottom:14px;
+    }
+    .card h2{
+      font-size:16px;margin:0 0 8px;
+    }
+    .card p{
+      font-size:13px;margin:0 0 8px;color:var(--muted);line-height:1.6;
+    }
+    .day-label{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);}
+    .tag-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;font-size:11px;}
+    .tag{padding:3px 8px;border-radius:999px;border:1px solid rgba(148,163,184,.6);color:var(--muted);}
+    ul{margin:6px 0 6px 18px;padding:0;font-size:13px;color:var(--muted);}
+    li{margin-bottom:4px;}
+    .mini-heading{font-size:12px;font-weight:600;margin-top:4px;}
+    footer.site{
+      border-top:1px solid rgba(148,163,184,.35);
+      margin-top:6px;
+    }
+    .footer-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:10px 16px 16px;
+      font-size:11px;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="SwamiG.gif" alt="SwamiG Institute logo" />
+      <div class="brand-text">
+        <span>Week 1</span>
+        <strong>Four Cowrie Shell</strong>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Overview</a>
+      <a class="current" href="week1-foundations.html">Week 1</a>
+      <a href="week2-responses.html">Week 2</a>
+      <a href="week3-art.html">Week 3</a>
+      <a href="week4-application.html">Week 4</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="eyebrow">Days 1–7</div>
+    <h1>Foundations of Four Cowrie Shell</h1>
+    <div class="meta">
+      Focus: Motivation, the cowrie snail, orientation, and the discipline of asking clean yes/no questions.
+    </div>
+
+    <!-- Day 1 -->
+    <article class="card" id="day1">
+      <div class="day-label">Day 1</div>
+      <h2>Why Four Cowrie? — Motivation</h2>
+      <p>
+        Read the Motivation section of PreLesson 0.0 and reflect on why Four Cowrie is offered to
+        the seeker who discovers that blessings can be disguised as calamity, delay, and distraction.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Journal: “Why am I taking this Four Cowrie course now?”</li>
+        <li>Identify one “distraction” in your life that might be hiding a blessing.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>How do I currently define “enlightenment,” and where might that definition be too rigid?</p>
+      <div class="tag-row">
+        <span class="tag">Reading: Motivation</span>
+        <span class="tag">Journal</span>
+      </div>
+    </article>
+
+    <!-- Day 2 -->
+    <article class="card" id="day2">
+      <div class="day-label">Day 2</div>
+      <h2>The Five Responses — Pentagonal Map</h2>
+      <p>
+        Review the five core responses (Yes, Probably, Definitely, Probably, No) and how they
+        appear as different families of castings. Notice how each creates a distinct kind of movement
+        in your decision making.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Copy the five responses into your notebook in your own words.</li>
+        <li>Write one example question that would be appropriate for each response family.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>Which response do I resist the most when it shows up in my life, and why?</p>
+      <div class="tag-row">
+        <span class="tag">Map of responses</span>
+        <span class="tag">Question design</span>
+      </div>
+    </article>
+
+    <!-- Day 3 -->
+    <article class="card" id="day3">
+      <div class="day-label">Day 3</div>
+      <h2>The Cowrie Snail &amp; Shell Anatomy</h2>
+      <p>
+        Study the description of the cowrie snail and its shell. Pay attention to the foot that touches
+        the earth and the ridged opening often called the “mouth” in divination practice.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Examine each of your four shells. Identify and mark (mentally or gently with a dot) the open side and the closed side.</li>
+        <li>Hold the shells in your hands and observe how they naturally orient when dropped.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>What does it mean that the shell opening symbolizes a sky-facing orientation in this system?</p>
+      <div class="tag-row">
+        <span class="tag">Shell anatomy</span>
+        <span class="tag">Embodied study</span>
+      </div>
+    </article>
+
+    <!-- Day 4 -->
+    <article class="card" id="day4">
+      <div class="day-label">Day 4</div>
+      <h2>Orientation — Skyward &amp; Earthward</h2>
+      <p>
+        Review how a shell is considered “open/skyward” or “closed/earthward,” and how success
+        and “success after struggle” are associated with these positions.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Practice flipping the shells 40 times and record how many times each one lands open or closed.</li>
+        <li>Note any shell that seems to prefer one orientation.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>What is my personal story of “success after struggle,” and how might the earthward side speak to that?</p>
+      <div class="tag-row">
+        <span class="tag">Orientation drill</span>
+        <span class="tag">Pattern watching</span>
+      </div>
+    </article>
+
+    <!-- Day 5 -->
+    <article class="card" id="day5">
+      <div class="day-label">Day 5</div>
+      <h2>Asking Questions — Part I</h2>
+      <p>
+        Study the guidelines for acceptable questions: yes/no only, no harm to self, others, or the
+        environment, and no repetition of the same question. See how the quality of the question
+        shapes the clarity of the answer.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Write ten well-formed yes/no questions that are spiritually aligned and ethically clean.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>Where in my life do I tend to ask vague questions and then blame the answer?</p>
+      <div class="tag-row">
+        <span class="tag">Question ethics</span>
+        <span class="tag">Writing practice</span>
+      </div>
+    </article>
+
+    <!-- Day 6 -->
+    <article class="card" id="day6">
+      <div class="day-label">Day 6</div>
+      <h2>Asking Questions — Part II</h2>
+      <p>
+        Compare clear and unclear sample questions. Notice how combining multiple ideas into one
+        question can produce ambiguous answers even when the casting itself is strong.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Write ten ill-formed questions that break the guidelines.</li>
+        <li>Rewrite each one as a clean, single-focus question.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>What emotional need drives me to bundle several concerns into one question?</p>
+      <div class="tag-row">
+        <span class="tag">Ill-formed vs well-formed</span>
+        <span class="tag">Self-awareness</span>
+      </div>
+    </article>
+
+    <!-- Day 7 -->
+    <article class="card" id="day7">
+      <div class="day-label">Day 7</div>
+      <h2>First Formal Casting Session</h2>
+      <p>
+        Bring together orientation and question discipline in your first formal Four Cowrie session
+        for this course. Treat the moment as a small ceremony with intention and respect.
+      </p>
+      <p class="mini-heading">Assignment</p>
+      <ul>
+        <li>Select one well-formed question from Day 5 or Day 6.</li>
+        <li>Perform a casting and record: the question, the orientation of each shell, the resulting family, and your interpretation.</li>
+      </ul>
+      <p class="mini-heading">Reflection Prompt</p>
+      <p>How did my emotional state, posture, and environment influence how I received the answer?</p>
+      <div class="tag-row">
+        <span class="tag">First cast</span>
+        <span class="tag">Documentation</span>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span>Week 1 — Foundations of Four Cowrie Shell</span>
+    <span><a href="index.html">Back to Overview</a></span>
+  </div>
+</footer>
+</body>
+</html>
