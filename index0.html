@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <meta name="color-scheme" content="dark" />
+  <title>Four Cowrie Shell — 30 Day Mini Course — SwamiG Institute</title>
+  <meta name="description" content="A 30 day mini course in Four Cowrie Shell divination from SwamiG Institute. Practice-based training in question formation, casting, interpretation, and spiritual alignment." />
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --ink:#f3f4f6;
+      --muted:#bfc3d1;
+      --card:#14141c;
+      --soft:#1b1b25;
+      --accent:#bb66ff;
+      --accent-2:#ffd166;
+      --ring:rgba(187,102,255,.35);
+      --border:rgba(148,163,184,.45);
+      --radius:18px;
+      --max:1100px;
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:radial-gradient(circle at top,#111827 0,#020617 55%);
+      color:var(--ink);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+
+    a{color:inherit;text-decoration:none;}
+    a:hover{color:var(--accent-2);}
+
+    header{
+      border-bottom:1px solid rgba(148,163,184,.3);
+      backdrop-filter:blur(16px);
+      background:linear-gradient(to bottom,rgba(15,23,42,.9),rgba(15,23,42,.6));
+      position:sticky;top:0;z-index:20;
+    }
+
+    .nav-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:10px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .brand img{
+      width:42px;height:42px;border-radius:999px;
+      box-shadow:0 0 0 1px rgba(148,163,184,.6);
+    }
+
+    .brand-text span{
+      display:block;
+      font-size:11px;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+
+    .brand-text strong{
+      font-size:15px;
+    }
+
+    .nav-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .nav-links a{
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid transparent;
+    }
+
+    .nav-links a.primary{
+      border-color:var(--ring);
+      background:rgba(17,24,39,.9);
+      color:var(--ink);
+    }
+
+    main{
+      flex:1;
+    }
+
+    .hero{
+      max-width:var(--max);
+      margin:26px auto 10px;
+      padding:0 18px 10px;
+      display:grid;
+      grid-template-columns:minmax(0,2.2fr) minmax(0,1.6fr);
+      gap:26px;
+      align-items:center;
+    }
+
+    @media (max-width:800px){
+      .hero{
+        grid-template-columns:minmax(0,1fr);
+      }
+      .hero-right{
+        order:-1;
+      }
+    }
+
+    .eyebrow{
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.2em;
+      color:var(--muted);
+      margin-bottom:8px;
+    }
+
+    h1{
+      font-size:clamp(26px,3vw,34px);
+      margin:0 0 10px;
+    }
+
+    .hero p{
+      margin:0 0 10px;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.6;
+    }
+
+    .hero-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin:12px 0 18px;
+    }
+
+    .badge{
+      font-size:11px;
+      padding:5px 10px;
+      border-radius:999px;
+      border:1px solid rgba(148,163,184,.5);
+      color:var(--muted);
+      background:rgba(15,23,42,.7);
+    }
+
+    .badge.accent{
+      border-color:var(--ring);
+      color:var(--accent-2);
+    }
+
+    .hero-cta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
+
+    .btn{
+      border-radius:999px;
+      padding:9px 16px;
+      font-size:13px;
+      border:1px solid var(--ring);
+      background:linear-gradient(to right,#4c1d95,#7c3aed);
+      color:white;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      box-shadow:0 15px 40px rgba(15,23,42,.7);
+    }
+
+    .btn.secondary{
+      background:transparent;
+      border-color:rgba(148,163,184,.5);
+      color:var(--muted);
+      box-shadow:none;
+    }
+
+    .hero-right-card{
+      background:radial-gradient(circle at top,var(--accent) -50%,var(--card) 45%);
+      border-radius:24px;
+      padding:18px 18px 20px;
+      border:1px solid var(--ring);
+      position:relative;
+      overflow:hidden;
+      box-shadow:0 20px 45px rgba(15,23,42,.8);
+    }
+
+    .hero-right-card h2{
+      font-size:15px;
+      margin:0 0 6px;
+    }
+
+    .hero-right-card p{
+      margin:0;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .hero-right-card .pill{
+      position:absolute;
+      top:16px;right:16px;
+      font-size:11px;
+      padding:4px 9px;
+      border-radius:999px;
+      background:rgba(15,23,42,.75);
+      border:1px solid rgba(226,232,240,.2);
+      text-transform:uppercase;
+      letter-spacing:.16em;
+    }
+
+    .hero-right-card img{
+      display:block;
+      margin:14px auto 10px;
+      max-width:100%;
+      border-radius:18px;
+      box-shadow:0 12px 26px rgba(15,23,42,.8);
+    }
+
+    .hero-right-foot{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      margin-top:6px;
+      font-size:11px;
+      color:var(--muted);
+    }
+
+    .hero-right-foot strong{
+      color:var(--accent-2);
+    }
+
+    .section{
+      max-width:var(--max);
+      margin:0 auto 40px;
+      padding:0 18px;
+    }
+
+    .section h2{
+      font-size:18px;
+      margin:10px 0;
+    }
+
+    .section p{
+      font-size:13px;
+      color:var(--muted);
+      max-width:700px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:16px;
+      margin-top:16px;
+    }
+
+    @media (max-width:900px){
+      .grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+    }
+    @media (max-width:600px){
+      .grid{
+        grid-template-columns:minmax(0,1fr);
+      }
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      border:1px solid var(--border);
+      padding:14px 14px 16px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .card span.label{
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      color:var(--muted);
+    }
+
+    .card h3{
+      font-size:15px;
+      margin:0;
+    }
+
+    .card p{
+      font-size:12px;
+      margin:0;
+      color:var(--muted);
+    }
+
+    .card footer{
+      margin-top:8px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      font-size:11px;
+      color:var(--muted);
+    }
+
+    .pill-small{
+      font-size:10px;
+      padding:3px 8px;
+      border-radius:999px;
+      border:1px solid rgba(148,163,184,.6);
+    }
+
+    .card a.stretched{
+      position:absolute;
+      inset:0;
+      z-index:1;
+    }
+
+    .card-content{
+      position:relative;
+      z-index:2;
+    }
+
+    .outline{
+      border-style:dashed;
+    }
+
+    footer.site{
+      border-top:1px solid rgba(148,163,184,.35);
+      margin-top:20px;
+    }
+    .footer-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:14px 18px 20px;
+      font-size:11px;
+      color:var(--muted);
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      gap:10px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="SwamiG.gif" alt="SwamiG Institute logo" />
+      <div class="brand-text">
+        <span>SwamiG Institute</span>
+        <strong>Four Cowrie Shell</strong>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a class="primary" href="#start">Start Course</a>
+      <a href="week1-foundations.html">Week 1</a>
+      <a href="week2-responses.html">Week 2</a>
+      <a href="week3-art.html">Week 3</a>
+      <a href="week4-application.html">Week 4</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="start">
+    <div class="hero-left">
+      <div class="eyebrow">30 Day Mini Course</div>
+      <h1>Four Cowrie Shell Divination</h1>
+      <p>
+        A 30-day, practice-oriented path using four cowrie shells to cultivate clear
+        questions, precise casting, and ancestral alignment. Designed for casual seekers,
+        Iyawo-Track students, and diviners deepening their art.
+      </p>
+      <div class="hero-badges">
+        <div class="badge accent">Daily casting discipline</div>
+        <div class="badge">PreLesson 0.0 integrated</div>
+        <div class="badge">Question formation clinic</div>
+      </div>
+      <div class="hero-cta">
+        <a href="week1-foundations.html" class="btn">Begin with Week 1</a>
+        <a href="week1-foundations.html#day1" class="btn secondary">Jump to Day 1</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <article class="hero-right-card">
+        <div class="pill">PreLesson 0.0</div>
+        <h2>Orientation &amp; First Cast</h2>
+        <p>
+          Learn why Four Cowrie was offered to the enlightenment seeker, how the
+          shell itself moves across the earth, and why only five distinct responses are
+          needed to organize your decisions.
+        </p>
+        <img src="4-cowrie-shells.jpg" alt="Four cowrie shells on mat (placeholder image name)" />
+        <div class="hero-right-foot">
+          <span>Suggested pace: <strong>1 lesson per day</strong></span>
+          <span>Optional review &amp; certification via SGI</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Course Overview</h2>
+    <p>
+      The mini course is structured around four weekly movements. Week 1 introduces the
+      seeker, the cowrie snail, and sacred question-asking. Week 2 explores the five
+      families of responses. Week 3 builds the art of casting and documentation. Week 4
+      applies Four Cowrie to real-world decisions and ethics.
+    </p>
+    <div class="grid">
+      <article class="card">
+        <a href="week1-foundations.html" class="stretched" aria-label="Week 1 Foundations"></a>
+        <div class="card-content">
+          <span class="label">Week 1</span>
+          <h3>Foundations of Four Cowrie</h3>
+          <p>
+            Motivation, cowrie anatomy, orientation, and the discipline of asking
+            clean yes/no questions without self-sabotage.
+          </p>
+          <footer>
+            <span class="pill-small">Days 1–7</span>
+            <span>Daily journal prompts</span>
+          </footer>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="week2-responses.html" class="stretched" aria-label="Week 2 The Five Responses"></a>
+        <div class="card-content">
+          <span class="label">Week 2</span>
+          <h3>The Five Families of Response</h3>
+          <p>
+            Alafia, Etawa, Ejife, Okanran, and Oyeku as living portals into devotion,
+            wisdom, power of word, good character, and contrast.
+          </p>
+          <footer>
+            <span class="pill-small">Days 8–14</span>
+            <span>Pattern tracking</span>
+          </footer>
+        </div>
+      </article>
+
+      <article class="card">
+        <a href="week3-art.html" class="stretched" aria-label="Week 3 Building the Art"></a>
+        <div class="card-content">
+          <span class="label">Week 3</span>
+          <h3>Building the Art of Casting</h3>
+          <p>
+            Sacred space, intuitive listening, naming your casts, and working with
+            traditional shells or alternative “elements”.
+          </p>
+          <footer>
+            <span class="pill-small">Days 15–21</span>
+            <span>21-day practice</span>
+          </footer>
+        </div>
+      </article>
+
+      <article class="card outline">
+        <a href="week4-application.html" class="stretched" aria-label="Week 4 Application"></a>
+        <div class="card-content">
+          <span class="label">Week 4</span>
+          <h3>Application &amp; Integration</h3>
+          <p>
+            Divining for self and others, ethics, shadow work, and a 30-cast cycle
+            to evaluate readiness for deeper initiatory work.
+          </p>
+          <footer>
+            <span class="pill-small">Days 22–30</span>
+            <span>Readiness review</span>
+          </footer>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="footer-inner">
+    <span>&copy; SwamiG Institute — Four Cowrie Shell Divination.</span>
+    <span>Contact: <a href="mailto:baba@swamiginstitute.com">baba@swamiginstitute.com</a></span>
+  </div>
+</footer>
+</body>
+</html>
