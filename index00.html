@@ -29,7 +29,7 @@ body{
   line-height:1.6;
 }
 
-/* ========== TOP NAV BAR ========== */
+/* ========== TOP NAV BAR (CENTERED) ========== */
 .top-nav{
   width:100%;
   background:#0d0d11;
@@ -44,17 +44,17 @@ body{
   margin:0 auto;
   padding:0 14px;
   display:flex;
+  justify-content:center;
   align-items:center;
-  gap:24px;
 }
 
-.top-nav-inner img{
-  width:48px;
-  height:48px;
-  border-radius:50%;
+.top-cards{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
 }
 
-/* base link styling */
 .top-cards > a,
 .dropdown-btn{
   color:var(--ink);
@@ -74,12 +74,6 @@ body{
   background:#1f1f2b;
   border-color:var(--accent);
   color:var(--accent-2);
-}
-
-.top-cards{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
 }
 
 /* ========== DROPDOWNS (PURE CSS) ========== */
@@ -211,15 +205,9 @@ body{
 
 <body>
 
-<!-- ========== SGI TOP NAV WITH DROPDOWNS ========== -->
+<!-- ========== SGI TOP NAV (CENTERED) ========== -->
 <div class="top-nav">
   <div class="top-nav-inner">
-
-    <!-- small logo -->
-    <a href="index.html">
-      <img src="SwamiG.gif" alt="SwamiG Logo">
-    </a>
-
     <div class="top-cards">
 
       <a href="index.html">Home</a>
