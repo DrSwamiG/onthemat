@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="color-scheme" content="dark" />
+<title>Four Cowrie Shell — PreLesson 0.0 — SwamiG Institute</title>
+
+<style>
+:root{
+  --bg:#0b0b0f;
+  --ink:#f3f4f6;
+  --muted:#bfc3d1;
+  --card:#14141c;
+  --soft:#1b1b25;
+  --accent:#bb66ff;
+  --accent-2:#ffd166;
+  --ring:rgba(187,102,255,.35);
+  --border:rgba(255,255,255,.12);
+  --radius:20px;
+  --max:850px;
+}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+}
+
+/* ========== TOP NAV BAR ========== */
+.top-nav{
+  width:100%;
+  background:#0d0d11;
+  border-bottom:1px solid var(--border);
+  padding:10px 0;
+  position:relative;
+  z-index:50;
+}
+
+.top-nav-inner{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 14px;
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+.top-nav-inner img{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+}
+
+/* base link styling */
+.top-cards > a,
+.dropdown-btn{
+  color:var(--ink);
+  padding:6px 12px;
+  border-radius:14px;
+  text-decoration:none;
+  font-size:14px;
+  border:1px solid var(--border);
+  background:var(--card);
+  cursor:pointer;
+  transition:.2s;
+  display:inline-block;
+}
+
+.top-cards > a:hover,
+.dropdown-btn:hover{
+  background:#1f1f2b;
+  border-color:var(--accent);
+  color:var(--accent-2);
+}
+
+.top-cards{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+/* ========== DROPDOWNS (PURE CSS) ========== */
+.dropdown{
+  position:relative;
+  display:inline-block;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:#14141c;
+  border:1px solid var(--border);
+  border-radius:14px;
+  min-width:200px;
+  padding:8px 0;
+  top:40px;
+  z-index:100;
+}
+
+.dropdown-content a{
+  padding:10px 16px;
+  display:block;
+  color:var(--ink);
+  text-decoration:none;
+  font-size:14px;
+}
+
+.dropdown-content a:hover{
+  background:#1f1f2b;
+  color:var(--accent-2);
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+/* ========== HEADER BLOCK ========== */
+.header{
+  text-align:center;
+  padding:30px 20px 10px;
+}
+
+.header img{
+  width:70px;height:70px;
+  border-radius:50%;
+}
+
+.header h1{
+  margin:10px 0 6px;
+  font-size:22px;
+}
+
+.tag{
+  font-size:13px;
+  color:var(--muted);
+}
+
+.badge{
+  margin-top:6px;
+  font-size:12px;
+  background:rgba(255,255,255,.07);
+  padding:6px 14px;
+  border-radius:999px;
+  display:inline-block;
+  border:1px solid var(--border);
+}
+
+/* ACTION BUTTON */
+.actions .btn{
+  display:inline-block;
+  margin-top:14px;
+  padding:10px 20px;
+  border-radius:999px;
+  background:linear-gradient(to right,#4c1d95,#7c3aed);
+  color:white;
+  text-decoration:none;
+  border:1px solid var(--ring);
+}
+
+/* ========== CIRCULAR COWRIE IMAGE ========== */
+.cowrie-responsive{
+  width:300px;
+  height:300px;
+  object-fit:cover;
+  display:block;
+  margin:25px auto 35px;
+  border-radius:50%;
+  border:3px solid var(--accent);
+  box-shadow:0 12px 30px rgba(0,0,0,.55);
+  cursor:pointer;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.cowrie-responsive:hover{
+  transform:scale(1.05);
+  box-shadow:0 28px 50px rgba(0,0,0,.7);
+}
+
+/* CONTENT */
+.content{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:20px;
+}
+
+.content h2{
+  margin-top:26px;
+  color:var(--accent-2);
+  font-size:20px;
+}
+
+.content p{
+  color:var(--ink);
+  font-size:15px;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:20px;
+  font-size:12px;
+  color:var(--muted);
+  margin-top:40px;
+  border-top:1px solid var(--border);
+}
+</style>
+</head>
+
+<body>
+
+<!-- ========== SGI TOP NAV WITH DROPDOWNS ========== -->
+<div class="top-nav">
+  <div class="top-nav-inner">
+
+    <!-- small logo -->
+    <a href="index.html">
+      <img src="SwamiG.gif" alt="SwamiG Logo">
+    </a>
+
+    <div class="top-cards">
+
+      <a href="index.html">Home</a>
+
+      <!-- DIVINATION DROPDOWN -->
+      <div class="dropdown">
+        <span class="dropdown-btn">Divination</span>
+        <div class="dropdown-content">
+
+          <a href="https://4cowrieshell.com">Obi Divination</a>
+          <a href="https://4cowrieshell.com/index0">4-Cowrie Modules</a>
+          <a href="https://iamaborisha.com/obipele">Obi Orisha / Obi-Pele</a>
+          <a href="https://myopele.com">Orisha-Pele (Opele)</a>
+          <a href="https://16cowrie.com">Merindilogun (16 Cowries)</a>
+          <a href="https://iamiyawo.com">Iyawo Track</a>
+          <a href="https://iamiyawo.com/certification">Certification Pathway</a>
+
+        </div>
+      </div>
+
+      <!-- INITIATIONS DROPDOWN -->
+      <div class="dropdown">
+        <span class="dropdown-btn">Initiations</span>
+        <div class="dropdown-content">
+
+          <a href="https://iamaborisha.com/ifa">Ifá Initiation</a>
+          <a href="https://iamaborisha.com/orisha">Orisha Initiation</a>
+          <a href="https://iamaborisha.com/warriors">Warrior Set</a>
+          <a href="https://iamaborisha.com/hand-of-ifa">Hand of Ifá</a>
+          <a href="https://iamaborisha.com/egungun">Egungun Initiation</a>
+          <a href="https://iamaborisha.com">Aborisha Pathway</a>
+
+        </div>
+      </div>
+
+      <a href="https://iamiyawo.com">Iyawo University</a>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- HEADER -->
+<div class="header">
+  <img src="SwamiG.gif" alt="SwamiG Logo">
+  <h1>SwamiG Institute</h1>
+
+  <div class="tag">Ifá • Isésé • Orisha — Spiritual Education, Rites & Divination</div>
+
+  <div class="badge">
+    Michigan nonprofit • <strong>501(c)(3) recognition pending — $DrSwamiG</strong>
+  </div>
+
+  <div class="actions">
+    <a class="btn" href="#">Need a Divination?</a>
+  </div>
+</div>
+
+<!-- CIRCULAR COWRIE IMAGE -->
+<a href="index0.html">
+  <img src="4cowrie.png" alt="Four Cowrie Shells" class="cowrie-responsive">
+</a>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <h2>Four Cowrie Shell — PreLesson 0.0</h2>
+  <p><em>
+    This is an offering for enlightenment seekers — those who discover that blessings can appear
+    as calamity, disaster, and delay. This course provides tools to transform distraction into
+    blessedness and nourish self-realization.
+  </em></p>
+
+  <h2>Motivation</h2>
+  <p>
+    Enlightenment is not what it appears to be, yet it is always beneficial. Self-realization is
+    temporary, but the discipline that supports it is permanent. This course encourages clarity
+    of purpose, deeper self-insight, and the reassembly of the fragmented self within an ancestral
+    framework.
+  </p>
+
+  <h2>Cowrie Snail</h2>
+  <p>
+    Cowries are marine snails with a smooth shell and a ventral opening lined with ridges (“teeth”).
+    In divination, this opening is treated as the “mouth.” We use cowrie shells (not live snails)
+    as sacred instruments for communication and insight.
+  </p>
+
+  <h2>Asking Questions</h2>
+  <p>
+    Only ask questions that require a “yes” or “no” response. Avoid harmful, repetitive,
+    already-known, or ill-formed questions. The clarity of your question determines the clarity
+    of the shell’s response.
+  </p>
+
+  <h2>Orientation & Casting</h2>
+  <p>
+    • <strong>Skyward (open mouth)</strong> → success<br>
+    • <strong>Earthward (closed mouth)</strong> → success after struggle  
+  </p>
+
+  <p>
+    When all four shells are cast, you may receive one of the five families of response:
+  </p>
+
+  <p>
+    • <strong>Alafia — Yes</strong><br>
+    • <strong>Ejife — Definitely</strong><br>
+    • <strong>Etawa — Probably</strong><br>
+    • <strong>Okanran — Doubtful</strong><br>
+    • <strong>Oyeku — No</strong>
+  </p>
+
+  <h2>Optional Assignment</h2>
+  <p>
+    Practice casting daily for <strong>21 consecutive days</strong>.<br>
+    Complete the work within <strong>two lunar cycles</strong>.<br>
+    Document and name each cast.<br>
+    Submissions may be reviewed within two cycles.
+  </p>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2025 SwamiG Institute • SwamiGInstitute.com • baba@swamiginstitute.com
+</div>
+
+</body>
+</html>
